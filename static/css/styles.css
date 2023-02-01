@@ -191,6 +191,8 @@ body{
     height: 100%;
     width: 100%;
     background-color: red;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Slideshow container */
@@ -298,7 +300,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 2em;
+    row-gap: .5em;
 }
 
 #art-wall-base-brd {
@@ -315,7 +317,12 @@ body{
     background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .project-frame {
     display:inline-block;
@@ -354,7 +361,7 @@ body{
       right:-.85em;
       top:-.85em;
     }
-.project-frame img {
+.project-frame img, .project-frame video {
     border: solid 2px;
     border-bottom-color:#ffe;
     border-left-color:#eed;
@@ -364,8 +371,14 @@ body{
     max-width:100%;
 }
 
+.project-frame video, .project-frame img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 .title-plaque {
-    width: 100%;
+    width: 80%;
     background-color: gold;
     margin-top: 1em;
     text-align: center;
@@ -393,7 +406,6 @@ body{
 }
 
 .title-plaque {
-  color: white;
   text-align: center;
   border-radius: 5px;
   position: relative;
@@ -402,6 +414,12 @@ body{
   background-size: 400% 400%;
   animation: TransitioningBackground 10s ease infinite;
   transition: 0.6s;
+}
+
+.title-plaque p {
+  font-size: x-small;
+  margin: 0;
+  padding: 0 .5em .5em .5em;
 }
 .title-plaque::before {
     content: '';
@@ -441,8 +459,21 @@ body{
 *****   https://blog.bitsrc.io/pure-css-to-make-a-button-shine-and-gently-change-colors-over-time-5b685d9c6a7e  ******
 **********************************************************************************************************************/
 
-.title-plaque a {
+.title-plaque a, .title-plaque p {
     color: rgba(0, 0, 0, .50);
+}
+
+.annotation-plaque {
+  display: block;
+  font-size: small;
+  text-align: center;
+  width: 50%;
+  height: 10%;
+  background-color: rgb(228, 228, 228);
+  color: rgb(110, 110, 110);
+  z-index: 10;
+  padding: .75em;
+  bottom: 15%
 }
 
 @media screen and (min-width: 720px) and (max-width: 1024px){
@@ -463,6 +494,9 @@ body{
     bottom:-1.25em;
     right:-1.25em;
     top:-1.25em;
+  }
+  .title-plaque {
+    width: 100%;
   }
 }
 
@@ -485,11 +519,14 @@ body{
     right:-1.25em;
     top:-1.25em;
   }
+  .title-plaque {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px) and (min-height: 720px) {
   .project-frame {
-    width: 500px;
+    width: 600px;
     height: 333px;
     border-width: 2em;
   }
@@ -505,6 +542,9 @@ body{
     bottom:-1.25em;
     right:-1.25em;
     top:-1.25em;
+  }
+  .title-plaque {
+    width: 100%;
   }
 }
 
@@ -548,3 +588,4 @@ body{
     font-size: 1em;
   }
 }
+
