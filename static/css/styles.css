@@ -566,9 +566,10 @@ body{
   box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25), 0px 0px 100px 10px rgba(186, 182, 154, 0.68);
 }
 
-.about p {
-  margin: 0;
-  font-size: .97em;
+.about-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5em;
 }
 
 .bold {
