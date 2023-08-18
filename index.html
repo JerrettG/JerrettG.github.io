@@ -4,235 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/css/styles.css">
-    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
     <script src="https://kit.fontawesome.com/829e5d7ffb.js" crossorigin="anonymous"></script>
     <title>Jerrett's Portfolio</title>
+    <style></style>
 </head>
 <body>
-    <header>
-        <nav id="navbar-nav">
-            <div class="nav-container">
-                <span id="navbar-name">Jerrett Gonsalves</span>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-                <ul id="navbar-links-list-dsktop-tablet">
-                    <li class="navbar-links">
-                        <span class="about-link">
-                            About
-                            <div class="underline"></div>
-                        </span>
-                    </li>
-                    <li class="navbar-links">
-                        <span class="projects-link">
-                            Projects
-                            <div class="underline"></div>
-                        </span>
-                    </li>
-                    <li class="navbar-links">
-                        <a href="./static/Resume_JerrettGonsalves.pdf" download style="text-decoration:none;">
-                            <span class="resume-link">
-                                Resume <i class="fa fa-download" aria-hidden="true"></i>
-                                <div class="underline"></div>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="navbar-links">
-                        <a href="mailto:gonsalvesjerrett2@gmail.com" style="text-decoration: none;">
-                            <span class="contact-link">
-                                Contact <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <div class="underline"></div>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="navbar-links">
-                        <a href="https://github.com/JerrettG" target="_blank" style="text-decoration: none;">
-                            <span>
-                                <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>
-                                <div class="underline"></div>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="navbar-links">
-                        <a href="https://www.linkedin.com/in/jerrett-gonsalves/" target="_blank" style="text-decoration: none;">
-                            <span>
-                                <i class="fab fa-linkedin-in"  style="font-size: 1.25em;"></i>
-                                <div class="underline"></div>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <ul id="navbar-links-list-mobile" class="expanded-menu" >
-                <li class="navbar-links">
-                    <span class="about-link">
-                        About
-                        <div class="underline"></div>
-                    </span>
-                </li>
-                <li class="navbar-links">
-                    <span class="projects-link">
-                        Projects
-                        <div class="underline"></div>
-                    </span>
-                </li>
-                <li class="navbar-links">
-                    <a href="./static/Resume_JerrettGonsalves.pdf" download style="text-decoration:none;">
-                        <span class="resume-link">
-                            Resume <i class="fa fa-download" aria-hidden="true"></i>
-                            <div class="underline"></div>
-                        </span>
-                    </a>
-                </li>
-                <li class="navbar-links">
-                    <a href="mailto:gonsalvesjerrett2@gmail.com" style="text-decoration: none;">
-                        <span class="contact-link">
-                            Contact <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <div class="underline"></div>
-                        </span>
-                    </a>
-                </li>
-                <li class="navbar-links">
-                    <a href="https://github.com/JerrettG" target="_blank" style="text-decoration: none;">
-                        <span>
-                            <i class="fa-brands fa-github" style="font-size: 1.25em;"></i>
-                            <div class="underline"></div>
-                        </span>
-                    </a>
-                </li>
-                <li class="navbar-links">
-                    <a href="https://www.linkedin.com/in/jerrett-gonsalves-8a16b021a/" target="_blank" style="text-decoration: none;">
-                        <span>
-                            <i class="fab fa-linkedin-in"  style="font-size: 1.25em;"></i>
-                            <div class="underline"></div>
-                        </span>
-                    </a>
-                </li>
+    <div class="navbar">
+        <h2>JG</h1>
+        <ul class="navbar-links">
+            <li><a href="/static/Resume_JerrettGonsalves.pdf" download>Resume</a></li>
+            <li><a href="https://linkedin.com/in/jerrett-gonsalves" target="_blank"><i class="fab fa-linkedin-in"  style="font-size: 1.25em;color: #0077b5;"></i></a></li>
+            <li><a href="https://github.com/JerrettG" target="_blank"><i class="fa-brands fa-github" style="font-size: 1.25em;"></i></a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div class="image-container">
+            <img id="profile-photo" src="/static/images/profile-photo.jpg">
+        </div>
+        <div id="name-container">
+            <span id="name">Jerrett Gonsalves</span>
+            <span>Software Engineer</span>
+        </div>
+        <div id="intro-container">
+            <span id="intro">Avid learner, specializing in Backend Development and DevOps.</span>
+        </div>
+        <!-- <div#socials-container>
+            <ul>
+                <li><a href="https://linkedin.com/in/jerrett-gonsalves"><i class="fab fa-linkedin-in"  style="font-size: 1.25em;color: #0077b5;"></i></a></li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <div class="about-container art-wall-container">
-                <div id="art-wall">
-                    <div class="about" style="color: gray;">
-                        <div class="about-content">
-                            <span>
-                                I'm <span class="bold">Jerrett Gonsalves</span>, a Software Engineer specializing in backend development with a passion for technology and eagerness to develop!
-                                I have experience building web applications in Java using the Spring Boot and Spring Cloud framework in combination with Node.js, as well as various Amazon Web Services. 
-                            </span>   
-                            <span> My professional experience at Apple Inc. has provided me with experience in a fast-paced, 
-                                continuously changing environment with a strong customer focus. My time at Kenzie Academy has taught me valuable skills in debugging, 
-                                troubleshooting, and finding creative solutions to complex business problems. 
-                            </span>
-                            <span>
-                                I hope to join a team where I can utilize my current experience 
-                                and learn new skills to improve and create impactful products.
-                            </span>
+        </div> -->
+        <div class="card" id="techStack">
+            <!-- <h4>Technology I Know:</h4> -->
+            <div class="column-text-container">
+                <div class="column-text">
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                <div class="column-text">
+                    <h4>Frameworks</h4>
+                    <ul>
+                        <li>Spring/Spring Cloud</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>React.js</li>
+                        <li>Dagger</li>
+                    </ul>
+                </div>
+                <div class="column-text">
+                    <h4>Cloud & Other Tech</h4>
+                    <ul>
+                        <li>Amazon Web Services</li>
+                        <li>SQL/NoSQL</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>Redis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="projects-section">
+            <div class="sectionTitle-container">
+                <h3 class="sectionTitle">Projects</h3>
+            </div>
+            <p class="section-details">Check out my projects! I've acted as the lead developer using Agile methodologies for group projects at Kenzie Academy (<img style="position: relative; top: 4px;" src="/static/images/cropped-kenzie-academy-logo-vector-final-outlines-rgb-favicon-400x400-1.png" alt="KA logo" width="20" height="20"/>) <span>and others I've done completely independent. (<span class="independentAssociation">JG</span>)</p>
+            <div class="projects">
+                <div class="card">
+                    <div class="projectHeader">
+                        <a class="viewGithubButton" target="_blank" href="https://github.com/JerrettG/Recipeasy_Capstone_Project">View on Github</a>
+                        <img class="projectAssociation-icon" src="/static/images/cropped-kenzie-academy-logo-vector-final-outlines-rgb-favicon-400x400-1.png" alt="KA logo"/>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="/static/images/recipeasy.gif" alt="Demo gif of Recipeasy"/>
+                        </div>
+                        <div class="card-text">
+                            <span class="card-text-title">Recipeasy</span>
+                            <span class="card-text-subtitle">Java, JavaScript, Spring, Node.js, Express.js, Webpack, AWS, Redis, Dagger</span>
+                            <span class="card-text-body">Recipeasy is a web application that helps you find recipes using the ingredients you already have in your fridge. You can create your profile, add your ingredients from your fridge to your profile, add your dietary preferences, and you'll get custom recipe recommendations that help you save money and save our planet.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="projectHeader">
+                        <a class="viewGithubButton" target="_blank" href="https://github.com/JerrettG/Grocery-E-commerce">View on Github</a>
+                        <span class="independentAssociation">JG</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="/static/images/groceryECommerce.gif" alt="Demo gif of Grcoery E-commerce"/>
+                        </div>
+                        <div class="card-text">
+                            <span class="card-text-title">Grocery E-commerce</span>
+                            <span class="card-text-subtitle">Java, JavaScript, Spring Cloud, AWS, Redis, Kubernetes, Docker, Stripe</span>
+                            <span class="card-text-body">I've built a mock Grocery E-commerce website that allows users to browse and search the store's catalog, add/update/remove items in the cart, and checkout using a Stripe integration. This project taught me how to build a distributed system using microservices, enable communication between microservices, and containerize applications into a container management platform.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="projectHeader">
+                        <a class="viewGithubButton" target="_blank" href="https://github.com/JerrettG/ReviewMyTeacher">View on Github</a>
+                        <img class="projectAssociation-icon" src="/static/images/cropped-kenzie-academy-logo-vector-final-outlines-rgb-favicon-400x400-1.png" alt="KA logo"/>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="/static/images/createReview.gif" alt="Demo gif of Review My Teacher"/>
+                        </div>
+                        <div class="card-text">
+                            <span class="card-text-title">Review My Teacher</span>
+                            <span class="card-text-subtitle">Java, JavaScript, Spring, Node.js, Webpack, AWS</span>
+                            <span class="card-text-body">This application serves as a tool for students that are selecting teachers for courses by providing them with reviews made by students who are currently enrolled or have taken a teacher's class. Students are able to make an informed decision about which teacher to enroll with based off of previous reviews which contain ratings in numerous categories and (optional) comments.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="projectHeader">
+                        <a class="viewGithubButton" target="_blank" href="https://github.com/JerrettG/Time-Management-Web-App">View on Github</a>
+                        <span class="independentAssociation">JG</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="image-container">
+                            <img src="/static/images/timely.gif" alt="Demo gif of Timely"/>
+                        </div>
+                        <div class="card-text">
+                            <span class="card-text-title">Timely</span>
+                            <span class="card-text-subtitle">Java, JavaScript, Node.js, Spring, AWS</span>
+                            <span class="card-text-body">
+                                Project-time management system utilizing an MVC design with the primary function to help clients get more accurate data about how long it takes for them to finish projects of certain sizes. Useful for SCRUM teams to keep track of sprint progress and useful for schools to utilize data to allocate or deallocate more time to students for assignments/projects.</span>
                         </div>
                     </div>
                 </div>
             </div>
-        <div class="text">About</div>
         </div>
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <div class="art-wall-container">
-                <div id="art-wall">
-                        <div class="project">
-                            <div class="project-frame">
-                                <img src="./static/images/recipeasy.gif"/>
-                            </div>
-                            <div class="title-plaque">
-                                <a href="https://github.com/JerrettG/Recipeasy_Capstone_Project" target="_blank">Recipeasy
-                                    <p>A website for getting custom recipe recommendations based on the ingredients in your fridge.</p>
-                                </a>
-                                
-                            </div>
-                        </div>
-                </div>
-            </div>
-        <div class="text">Projects (1/4)</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <div class="art-wall-container">
-                <div id="art-wall">
-                    <div class="featured-project">
-                        <div class="project">
-                            <div class="project-frame">
-                                <img src="./static/images/createReview.gif">
-                            </div>
-                            <div class="title-plaque">
-                                <a href="https://github.com/JerrettG/ReviewMyTeacher" target="_blank">Review My Teacher<p>A website for students to leave reviews about teachers for courses previously taken.</p>
-                                </a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="text">Projects (2/4)</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <div class="art-wall-container">
-                <div id="art-wall">
-                    <div class="project">
-                        <div class="project-frame">
-                            <img src="./static/images/groceryECommerce.gif">
-                        </div>
-                        <div class="title-plaque">
-                            <a href="https://github.com/JerrettG/Grocery-E-commerce" target="_blank">Grocery E-commerce
-                                <p>A website for a local grocery store for users to view items and place orders.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="text">Projects (3/4)</div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <div class="art-wall-container">
-                <div id="art-wall">
-                        <div class="project">
-                            <div class="project-frame">
-                                <img src="./static/images/timely.gif">
-                            </div>
-                            <div class="title-plaque">
-                                <a href="https://github.com/JerrettG/Time-Management-Web-App" target="_blank">Timely
-                                    <p>A website for organzing and managing projects while keeping track of time spent, notes, and project completion.</p>
-                                </a>
-                                
-                            </div>
-                        </div>
-                </div>
-            </div>
-        <div class="text">Projects (4/4)</div>
-        </div>
-
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" >&#10094;</a>
-        <a class="next" >&#10095;</a>
     </div>
-  
-    <!-- The dots/circles -->
-    <div style="text-align:center; z-index: 10; position: relative;">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-    <div id="art-wall-base-brd"></div>
-    <div id="art-wall-floor"></div>
-
 </body>
 </html>

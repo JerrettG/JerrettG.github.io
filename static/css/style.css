@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100;300&family=Poppins&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100;300;400;500&family=Poppins&display=swap');
+:root {
+    --primary-color: #428850;
+    --art-wall-color: rgb(82, 78, 78);
+    --secondary-color: #4b9c5b;
+    --nav-color: rgb(58, 58, 58);
+    --black: rgb(54, 69, 79);
+    --black-rgb: 54, 69, 79;
+}
+
+* {
+    box-sizing:border-box;
+    color: #36454f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #fffdf9;
+}
+
+#profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.navbar {
+    /* background-color: #8fc399; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1em;
+    align-items: center;
+    /* box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.navbar h2 {
+    color: var(--primary-color);
+    padding-left: 1em;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar-links li {
+    padding: 0 1em;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background-color: #fffdf9;
+}
+
+#name-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1em 0;
+}
+
+#name {
+    font-size: x-large;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#intro-container {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.card {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0px 3px 5px rgb(0,0,0,.15);
+}
+
+.column-text-container {
+    text-align: center;
+}
+.column-text-container ul {
+    list-style: none;
+    padding: 0;
+}
+.column-text h4 {
+    color: var(--secondary-color);
+}
+
+@media screen and (min-width: 782px) {
+    .column-text-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+.sectionTitle-container{
+    align-self: flex-start;
+}
+.sectionTitle {
+    font-weight: 500;
+    font-size: x-large;
+}
+.section-details {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.projects-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-section .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-section .image-container {
+    padding: 1em;
+}
+.projects-section .image-container img{
+    width: 200px;
+    height: 150px;
+}
+.projectHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.viewGithubButton {
+    margin-left: 10px;
+    font-size: small;
+    border: solid 1px gray;
+    border-radius: 30px;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease;
+}
+.viewGithubButton:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.projectAssociation-icon {
+    width: 20px;
+    height: 20px;
+}
+.independentAssociation {
+    font-weight: 400;
+    color: var(--primary-color);
+}
+.projects {
+    width: 100%;
+}
+.projects .card {
+    width: fit-content;
+    margin: 5px;
+}
+.projects .card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .card span {
+    display: block;
+    margin-bottom: .74em
+}
+
+.projects .card-text-title {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.projects .card-text-subtitle {
+    font-size: small;
+    font-weight: 100;
+    color: rgb(var(--black-rgb));
+    text-align: center;
+}
+.projects .card-text-body {
+    font-weight: 300;
+    color: rgb(var(--black-rgb), .8);
+}
+
+@media screen and (min-width: 782px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projects .card {
+        width: 300px;
+    }
+    .sectionTitle-container{
+        text-align: center;
+        align-self: center;
+    }
+    .section-details {
+        text-align: center;
+        width: 400px;
+    }
+}
