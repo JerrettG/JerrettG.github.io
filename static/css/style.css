@@ -154,6 +154,7 @@ body {
 .viewGithubButton:hover {
     background-color: var(--secondary-color);
     color: white;
+    text-align: center;
 }
 .projectAssociation-icon {
     width: 20px;
